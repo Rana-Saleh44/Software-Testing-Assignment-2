@@ -1,17 +1,12 @@
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class SeleniumTest {
     private WebDriver webDriver;
-    private WebDriverWait wait;
 
     @Before
     public void init(){
@@ -19,7 +14,6 @@ public class SeleniumTest {
         webDriver = new EdgeDriver();
         webDriver.navigate().to("https://www.imdb.com/");
         webDriver.manage().window().maximize();
-        wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
     }
 
     @Test
