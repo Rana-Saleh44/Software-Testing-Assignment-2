@@ -2,3 +2,4 @@
 -> Modified the TodoController class -> return 404-NOT FOUND response for the READ TODO TEST CASES
 -> Added a new exception called ExceptionsUpdateTodo
 -> Modified the TodoController class -> return 404-NOT FOUND response for the Update TODO TEST CASES
+-> Added equals Method in TodoCreateRequest & Added hashCode Method to ensure that two equal objects have the same hash code.
